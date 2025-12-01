@@ -20,7 +20,7 @@ const categoryrt = require('./routes/category');
 
 const blogrt = require('./routes/blogs');
 
-// const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 4000
 
 const commentsrt = require('./routes/comment');
 
@@ -33,6 +33,6 @@ app.use('/blogs',blogrt);
 app.use('/comment',commentsrt);
 
 
-app.listen(4000, () => {
+app.listen(PORT, () => {
     console.log("server is live");
 })
